@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "*": ["./@mf-types/*"]
+    }
+  },
+  "include": ["src", "./@mf-types/*"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
+}

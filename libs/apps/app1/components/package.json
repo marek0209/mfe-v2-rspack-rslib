@@ -1,0 +1,39 @@
+{
+  "name": "@app1/components",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "rslib build",
+    "dev": "rslib build --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "rstest",
+    "lint": "eslint src"
+  },
+  "peerDependencies": {
+    "@mui/material": "^6.0.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@mui/material": "^6.5.0",
+    "@rsbuild/plugin-react": "^2.0.1",
+    "@rslib/core": "^0.22.0",
+    "@rstest/adapter-rslib": "^0.10.3",
+    "@rstest/core": "^0.10.3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@types/react": "^19.1.6",
+    "jsdom": "^26.1.0",
+    "react": "^19.2.7",
+    "typescript": "5.9.3"
+  }
+}

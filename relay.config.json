@@ -1,0 +1,7 @@
+{
+  "src": "./apps",
+  "schema": "./schema.graphql",
+  "language": "typescript",
+  "eagerEsModules": true,
+  "excludes": ["**/dist/**", "**/node_modules/**", "**/@mf-types/**"]
+}

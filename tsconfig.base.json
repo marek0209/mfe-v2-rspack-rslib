@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "declaration": true,
+    "declarationMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-org/components": ["libs/shared/components/src/index.ts"],
+      "@my-org/hooks": ["libs/shared/hooks/src/index.ts"],
+      "@app1/components": ["libs/apps/app1/components/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "@mf-types"]
+}

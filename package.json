@@ -1,0 +1,41 @@
+{
+  "name": "mfe-v2-rspack-rslib",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "npx pnpm -r --parallel --filter './apps/*' dev",
+    "build": "npx pnpm build:libs && npx pnpm -r --filter './apps/*' build",
+    "build:libs": "npx pnpm --filter '@my-org/*' --filter '@app1/*' build",
+    "test": "npx pnpm -r test",
+    "lint": "npx pnpm -r lint",
+    "typecheck": "npx pnpm -r typecheck",
+    "relay": "relay-compiler",
+    "clean": "npx pnpm -r exec rm -rf dist @mf-types"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@babel/core": "^7.27.4",
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
+    "babel-plugin-relay": "^21.0.1",
+    "@module-federation/enhanced": "^2.5.1",
+    "@rspack/core": "^1.4.5",
+    "@rspack/plugin-react-refresh": "^1.4.3",
+    "babel-loader": "^10.0.0",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "@testing-library/jest-dom": "^6.6.3",
+    "prettier": "^3.5.3",
+    "jsdom": "^26.1.0",
+    "relay-compiler": "^21.0.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.33.0"
+  },
+  "packageManager": "pnpm@11.5.3+sha512.7ac1c919341c213a34dc0d02afb7143c5c26ac26ee8c4782deea821b8ac64d2134a081fd8941dae6e29bbb48f58dfc2b7fbceeccc07cb2f09d219d342a4969ed"
+}
