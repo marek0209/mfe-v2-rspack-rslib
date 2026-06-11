@@ -1,4 +1,4 @@
-# das-zwo MFE Monorepo
+# MFE V2 Monorepo
 
 pnpm workspaces monorepo with React 19, raw Rspack, Module Federation 2.0, RsLib shared packages, Relay, and Rstest.
 
